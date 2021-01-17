@@ -1,0 +1,47 @@
+.Home-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #4341A4;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.Footer{
+    width: 100%;
+    height: 45vh;
+    
+    background-image: url('../../assets/footer1.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Footer img{
+    height: 75%;
+    margin-right: 5%;
+}
+.Middle{
+    width: 50%;
+    height: 40vh;
+   background-color: teal;
+   display: flex;
+   background-image: url('../../assets/star.svg');
+   background-position: center;
+   background-size: cover;
+}
+.Start{
+    width: 100%;
+}
+.Top{
+    width: 100%;
+    height: 10vh;
+    background-color: thistle;
+}
+.Enter-Middle{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid white;
+}
