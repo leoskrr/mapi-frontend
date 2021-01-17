@@ -61,21 +61,32 @@
     font-size: 20px;
     color: white;
 }
-.Cntrol{
+.Cntrol-p2{
     width: 90%;
     height: 10%;
     
     margin-left: 2%;
     margin-top: 5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
-.Cntrol a{
+.Cntrol-p2 a{
     width: 15%;
     height: 70%;
     background: #F36648;
-    padding: 15px;
+    padding: 10px;
     color: white;
     border-radius: 30px;
     text-align: center;
+}
+.Cntrol-p2  img{
+    width: 30%;
+}
+#Back{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

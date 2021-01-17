@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import Kart from '../../assets/kart.svg'
 import Cacto from '../../assets/cacto.svg'
+import Back from '../../assets/Vector 262.svg'
 class thiComponent extends Component {
     constructor(props) {
         super(props);
@@ -45,8 +46,8 @@ class thiComponent extends Component {
                 </div>
                 <div className="Content-quiz">
                     <div className="TopQuiz1">
-                        <div className="Boll1-cheio"></div>
                         <div className="Boll1"></div>
+                        <div className="Boll1-cheio"></div>
                         <div className="Boll1"></div>
                     </div>
 
@@ -57,14 +58,15 @@ class thiComponent extends Component {
                     <span id="sp1">*Você pode marcar uma, duas ou nenhuma</span>
                     <div className="Question1">
                         <input type="checkbox" id="scales" name="scales" />
-                        <span>Estou preparado para assumir riscos.</span>
+                        <span>Sou determinado, sei onde e como chegar.</span>
                     </div>
                     <div className="Question1">
                         <input type="checkbox" id="scales" name="scales" />
-                        <span>Estou ligado em tudo o que acontece. Leio revistas, ouço pessoas e tudo que possa mostrar uma oportunidade de negócio.</span>
+                        <span>Estou atento para tudo o que ainda não existe ou que ainda precisa ser feito no mercado de trabalho.</span>
                     </div>
-                    <div className="Cntrol">
-                        <Link to="/quiz02">Avançar</Link>
+                    <div className="Cntrol-p2">
+                        <Link id="Back" to="/quiz01"><img src={Back}/></Link>
+                        <Link to="/quiz03">Avançar</Link>
                     </div>
                 </div>
 

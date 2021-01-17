@@ -3,8 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './style.css';
 import Kart from '../../assets/kart.svg'
-import Cacto from '../../assets/cacto.svg'
-class thiComponent extends Component {
+import Compass from '../../assets/compass.svg'
+class AutoComponent extends Component {
     constructor(props) {
         super(props);
 
@@ -17,10 +17,12 @@ class thiComponent extends Component {
     async componentDidMount() {
 
     }
-
+    goLogin() {
+        console.log('oi')
+    }
     render() {
         return (
-            <div className="Home-container-quiz">
+            <div className="Home-containerResult">
                 <div className="Top">
                     <div className="Part1">
                         <img className="Start" src={Kart} alt="Kart"></img>
@@ -43,34 +45,29 @@ class thiComponent extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="Content-quiz">
-                    <div className="TopQuiz1">
-                        <div className="Boll1-cheio"></div>
-                        <div className="Boll1"></div>
-                        <div className="Boll1"></div>
+                <div className="Container-auto">
+                    <div className="Total">
+                        <div className="P01">
+                            <span>Você tem espírito de empreendedor!</span>
+                            <br></br>
+
+                            <label>
+
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/>quis nostrud exercitation ullamco <br/> laboris nisi ut aliquip ex ea commodo consequat.</label>
+                        </div>
+                        <div className="P02">
+                            <img src={Compass} />
+                        </div>
+                    </div>
+                    <div className="Buttonss1">
+                        
+                        <Link id="NExt" to="/map01">Continue sua jornada</Link>
                     </div>
 
-                    <label>Marque as alternativas*
-                        <br />
-                        que você mais se identifica</label>
-
-                    <span id="sp1">*Você pode marcar uma, duas ou nenhuma</span>
-                    <div className="Question1">
-                        <input type="checkbox" id="scales" name="scales" />
-                        <span>Estou preparado para assumir riscos.</span>
-                    </div>
-                    <div className="Question1">
-                        <input type="checkbox" id="scales" name="scales" />
-                        <span>Estou ligado em tudo o que acontece. Leio revistas, ouço pessoas e tudo que possa mostrar uma oportunidade de negócio.</span>
-                    </div>
-                    <div className="Cntrol">
-                        <Link to="/quiz02">Avançar</Link>
-                    </div>
                 </div>
-
 
             </div>
         );
     }
 }
-export default thiComponent;
+export default AutoComponent;
