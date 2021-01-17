@@ -20,17 +20,30 @@
     align-items: flex-end;
 }
 .Footer img{
-    height: 75%;
+    height: 60%;
     margin-right: 5%;
 }
 .Middle{
-    width: 50%;
+    width: 65%;
     height: 40vh;
-   background-color: teal;
+   
    display: flex;
-   background-image: url('../../assets/star.svg');
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    background-position: center;
    background-size: cover;
+}
+.Middle img{
+    z-index: 1;
+    position: relative;
+}
+.Middle h1{
+    z-index: 100;
+    position: absolute;
+    margin-top: 7%;
+    color: white;
+    font-size: 53px;
 }
 .Start{
     width: 100%;
@@ -38,10 +51,82 @@
 .Top{
     width: 100%;
     height: 10vh;
-    background-color: thistle;
+    display: flex;
+    justify-content: space-between;
 }
 .Enter-Middle{
     width: 100%;
     height: 10vh;
-    border: 1px solid white;
+ 
+    display: flex;
+    justify-content: center;
+}
+.Part1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Part1 img{
+    width: 35%;
+}
+.Part2{
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Menu1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F36648;
+    border-radius: 0px 0px 200px 200px;
+-moz-border-radius: 0px 0px 200px 200px;
+-webkit-border-radius: 0px 0px 200px 200px;
+border: 0px solid #000000;
+cursor: pointer;
+}
+.Menu1:hover{
+    background: #FBA524;
+}
+.Menu1 a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Menu2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Menu2 a{
+    color: white;
+    text-decoration: none;
+    color: #F36648;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Menu3 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Menu3 a{
+    color: white;
+    text-decoration: none;
+    color: #F36648;
+    font-size: 20px;
+    font-weight: 500;
 }

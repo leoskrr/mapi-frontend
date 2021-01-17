@@ -1,0 +1,202 @@
+.Home-container-Login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #4341A4;
+    
+    flex-direction: column;
+    
+    align-items: center;
+}
+.Top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Part1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Part1 img{
+    width: 35%;
+}
+.Part2{
+    width: 60%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Menu1-login{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Menu1-login a{
+    color: #F36648;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Menu2-login{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Menu2-login a{
+    color: white;
+    text-decoration: none;
+    color: #F36648;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Menu3-login {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F36648;
+    border-radius: 0px 0px 200px 200px;
+-moz-border-radius: 0px 0px 200px 200px;
+-webkit-border-radius: 0px 0px 200px 200px;
+border: 0px solid #000000;
+cursor: pointer;
+}
+.Menu3-login a{
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Content-login{
+    width: 70%;
+    height: 70%;
+    
+    margin-top: 5%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.Content-login img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.LoginP1{
+    width: 50%;
+    height: 100%;
+    
+    position: absolute;
+    z-index: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginP1 h1{
+    font-size: 50px;
+    text-align: center;
+}
+.LoginP2{
+    width: 50%;
+    height: 100%;
+    
+    position: absolute;
+    z-index: 100;
+    margin-left: 50%;
+    display: flex;
+    
+    align-items: center;
+}
+.Login-Container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.Menus{
+    width: 90%;
+    height: 10%;
+    
+    display: flex;
+}
+.Menus button{
+    border: none;
+    width: 50%;
+    cursor: pointer;
+}
+#Login{
+    background: #F3AA56;
+    color: white;
+    font-size: 17px;
+    border-radius: 38px 38px 0px 0px;
+-moz-border-radius: 38px 38px 0px 0px;
+-webkit-border-radius: 38px 38px 0px 0px;
+border: 0px solid #000000;
+}
+#Cadastre-se{
+    background: #F36648;
+    color: white;
+    font-size: 17px;
+    border-radius: 38px 38px 0px 0px;
+-moz-border-radius: 38px 38px 0px 0px;
+-webkit-border-radius: 38px 38px 0px 0px;
+border: 0px solid #000000;
+}
+.Login-enter{
+    width: 90%;
+    height: 70%;
+    background: #F3AA56;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 38px 38px;
+-moz-border-radius: 0px 0px 38px 38px;
+-webkit-border-radius: 0px 0px 38px 38px;
+border: 0px solid #000000;
+}
+.Login-enter input{
+    width: 80%;
+    height: 13%;
+    border: none;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+.Login-enter button{
+    border: none;
+    width: 80%;
+    height: 15%;
+    border-radius: 20px;
+    background: #6141A4;
+    color: white;
+    font-size: 20px;
+    
+}
+.Cadastre-enter{
+    width: 90%;
+    height: 100%;
+    background: #F36648;
+    border-radius: 0px 0px 38px 38px;
+-moz-border-radius: 0px 0px 38px 38px;
+-webkit-border-radius: 0px 0px 38px 38px;
+border: 0px solid #000000;
+display: none;
+
+}
