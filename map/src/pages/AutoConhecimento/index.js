@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './style.css';
-import Camel from '../../assets/camel.svg'
-import Star from '../../assets/star.svg'
-import Button from '../../components/Button'
 import Kart from '../../assets/kart.svg'
-import Typewriter from 'typewriter-effect/dist/core';
-class HomeComponent extends Component {
+import Cacto from '../../assets/cacto.svg'
+class AutoComponent extends Component {
     constructor(props) {
         super(props);
 
@@ -18,20 +15,9 @@ class HomeComponent extends Component {
         }
     }
     async componentDidMount() {
-        var app = document.getElementById('app');
 
-        var typewriter = new Typewriter(app, {
-          loop: true,
-          delay: 75,
-        });
-        
-        typewriter
-          .pauseFor(500)
-          .typeString('Comece a sua jornada')
-          .pauseFor(300)
-          .start();
     }
-    goLogin(){
+    goLogin() {
         console.log('oi')
     }
     render() {
@@ -53,24 +39,35 @@ class HomeComponent extends Component {
                             </a>
                         </div>
                         <div className="Menu3">
-                        <Link to="/login">
+                            <Link to="/login">
                                 Entrar
                             </Link>
                         </div>
                     </div>
                 </div>
-                <div className="Middle">
-                    <img className="Start" src={Star} alt="Camel"></img>
-                    <h1 id="app">Comece a sua jornada</h1>
+                <div className="Container-auto">
+                    <div className="Total">
+                        <div className="P01">
+                            <span>Autoconhecimento</span>
+                            <br></br>
+
+                            <h3>Teste: Como está seu perfil empreendedor?</h3>
+                            <label>
+                                Na primeira etapa do [nome], queremos que você inicie sua jornada para o empreendedorismo e geração de renda com uma reflexão.</label>
+                        </div>
+                        <div className="P02">
+                            <img src={Cacto} />
+                        </div>
+                    </div>
+                    <div className="Buttonss">
+                        <button type="button">Quero compreender!</button>
+                        <button type="button">Começar depois</button>
+                    </div>
+
                 </div>
-                <div className="Enter-Middle">
-                    <Button onClick={this.goLogin} ></Button>
-                </div>
-                <div className="Footer">
-                    <img src={Camel} alt="Camel"></img>
-                </div>
+
             </div>
         );
     }
 }
-export default HomeComponent;
+export default AutoComponent;

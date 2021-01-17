@@ -7,7 +7,7 @@ import Star from '../../assets/star.svg'
 import Button from '../../components/Button'
 import Kart from '../../assets/kart.svg'
 import Typewriter from 'typewriter-effect/dist/core';
-class HomeComponent extends Component {
+class MapComponent extends Component {
     constructor(props) {
         super(props);
 
@@ -21,56 +21,56 @@ class HomeComponent extends Component {
         var app = document.getElementById('app');
 
         var typewriter = new Typewriter(app, {
-          loop: true,
-          delay: 75,
+            loop: true,
+            delay: 75,
         });
-        
+
         typewriter
-          .pauseFor(500)
-          .typeString('Comece a sua jornada')
-          .pauseFor(300)
-          .start();
+            .pauseFor(500)
+            .typeString('Comece a sua jornada')
+            .pauseFor(300)
+            .start();
     }
-    goLogin(){
-        console.log('oi')
+    showDivs1() {
+        console.log('teste')
+        document.getElementById("IdLogin").style.display = "flex";
+        document.getElementById("CadLogin").style.display = "none";
+
+    }
+    showDivs2() {
+        document.getElementById("CadLogin").style.display = "flex";
+        document.getElementById("CadLogin").style.flexDirection = "column";
+        document.getElementById("IdLogin").style.display = "none";
     }
     render() {
         return (
-            <div className="Home-container">
+            <div className="Home-container-Login">
                 <div className="Top">
                     <div className="Part1">
                         <img className="Start" src={Kart} alt="Kart"></img>
                     </div>
                     <div className="Part2">
-                        <div className="Menu1">
-                            <a href="">
+                        <div className="Menu1-login">
+                            <Link to="/">
                                 Home
-                            </a>
+                            </Link>
                         </div>
-                        <div className="Menu2">
-                            <a href="">
+                        <div className="Menu2-login">
+                            <Link to="">
                                 Sobre
-                            </a>
+                            </Link>
                         </div>
-                        <div className="Menu3">
-                        <Link to="/login">
+                        <div className="Menu3-login">
+                            <Link to="/login">
                                 Entrar
                             </Link>
                         </div>
                     </div>
                 </div>
-                <div className="Middle">
-                    <img className="Start" src={Star} alt="Camel"></img>
-                    <h1 id="app">Comece a sua jornada</h1>
-                </div>
-                <div className="Enter-Middle">
-                    <Button onClick={this.goLogin} ></Button>
-                </div>
-                <div className="Footer">
-                    <img src={Camel} alt="Camel"></img>
-                </div>
+                
+
             </div>
         );
     }
 }
-export default HomeComponent;
+export default MapComponent;

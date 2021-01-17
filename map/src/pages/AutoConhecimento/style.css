@@ -1,0 +1,68 @@
+.Container-auto{
+    width: 60%;
+    height: 60%;
+    background: rgba(196, 196, 196, 0.3);
+border-radius: 20px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.P01{
+    width: 80%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.P01 span{
+    font-size: 50px;
+    color: white;
+    margin-left: 10%;
+    font-weight: 500;
+}
+.P01 h3{
+    margin-left: 14%;
+    color: white;
+}
+.P01 label{
+    color: white;
+    margin-left: 14%;
+    margin-top: 2%;
+    font-size: 18px;
+}
+.P02{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Total{
+    display: flex;
+    height: 100%;
+}
+.Buttonss{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Buttonss button{
+    height: 35%;
+    border: none;
+    width: 40%;
+    background: #F36648;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Buttonss button:hover{
+    background: #FBA524;
+}
+.P02 img{
+    margin-left: -100%;
+}

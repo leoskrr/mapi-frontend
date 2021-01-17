@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css'
 class Button extends Component {
     constructor(props) {
@@ -13,11 +14,15 @@ class Button extends Component {
     async componentDidMount() {
 
     }
+    goLogin(){
+        this.replace("/login")
+        
+    }
     render() {
         return (
-            <div  className="Button-Container">
+            <Link to="/login"  className="Button-Container">
                Vamos lá!
-            </div>
+            </Link>
         );
     }
 }

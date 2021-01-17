@@ -178,6 +178,7 @@ border: 0px solid #000000;
     border: none;
     padding-left: 20px;
     border-radius: 20px;
+    font-size: 18px;
 }
 .Login-enter button{
     border: none;
@@ -191,12 +192,30 @@ border: 0px solid #000000;
 }
 .Cadastre-enter{
     width: 90%;
-    height: 100%;
+    height: 90%;
     background: #F36648;
     border-radius: 0px 0px 38px 38px;
 -moz-border-radius: 0px 0px 38px 38px;
 -webkit-border-radius: 0px 0px 38px 38px;
 border: 0px solid #000000;
 display: none;
-
+justify-content: space-around;
+align-items: center;
+}
+.Cadastre-enter input{
+    width: 80%;
+    height: 11%;
+    border: none;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.Cadastre-enter button{
+    border: none;
+    width: 80%;
+    height: 10%;
+    border-radius: 20px;
+    background: #6141A4;
+    color: white;
+    font-size: 20px;
 }

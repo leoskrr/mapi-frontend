@@ -51,9 +51,9 @@ class LoginComponent extends Component {
                     </div>
                     <div className="Part2">
                         <div className="Menu1-login">
-                            <a href="">
+                            <Link to="/">
                                 Home
-                            </a>
+                            </Link>
                         </div>
                         <div className="Menu2-login">
                             <a href="">
@@ -79,16 +79,18 @@ class LoginComponent extends Component {
                                 <button onClick={this.showDivs2} id="Cadastre-se" type="button">Cadastre-se</button>
                             </div>
                             <div id="IdLogin" className="Login-enter">
+                                <br></br>
                                 <input type="text" id="fname" name="fname" placeholder="e-mail" />
                                 <input type="text" id="fname" name="fname" placeholder="senha" />
                                 <a href="">Esqueci minha senha</a>
-                                <button type="button">Entrar</button>
+                                <Link  to="/map01">Entrar</Link>
                             </div>
                             <div id="CadLogin" className="Cadastre-enter">
+                                <input type="text" id="fname" name="fname" placeholder="nome usuário" />
                                 <input type="text" id="fname" name="fname" placeholder="e-mail" />
                                 <input type="text" id="fname" name="fname" placeholder="senha" />
-                                <input type="text" id="fname" name="fname" placeholder="e-mail" />
-                                <input type="text" id="fname" name="fname" placeholder="senha" />
+                                <input type="text" id="fname" name="fname" placeholder="confirmar senha" />
+                                <button type="button">Vamos lá!</button>
                             </div>
                         </div>
                     </div>
