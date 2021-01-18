@@ -1,0 +1,24 @@
+.Map-Container{
+    width: 70%;
+    height: 70%;
+   
+    display: flex;
+    justify-content: center;
+}
+.Map-Next{
+    width: 70%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Map-Next a{
+    width: 10%;
+    background: #F36648;
+    height: 45%;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+}

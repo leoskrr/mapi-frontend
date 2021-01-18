@@ -83,7 +83,7 @@ class LoginComponent extends Component {
                                 <input type="text" id="fname" name="fname" placeholder="e-mail" />
                                 <input type="text" id="fname" name="fname" placeholder="senha" />
                                 <a href="">Esqueci minha senha</a>
-                                <Link  to="/map01">Entrar</Link>
+                                <Link id="Entrar"  to="/map01">Entrar</Link>
                             </div>
                             <div id="CadLogin" className="Cadastre-enter">
                                 <input type="text" id="fname" name="fname" placeholder="nome usuário" />

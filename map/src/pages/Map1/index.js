@@ -7,6 +7,7 @@ import Star from '../../assets/star.svg'
 import Button from '../../components/Button'
 import Kart from '../../assets/kart.svg'
 import Typewriter from 'typewriter-effect/dist/core';
+import Map1 from '../../assets/map1.svg'
 class MapComponent extends Component {
     constructor(props) {
         super(props);
@@ -67,7 +68,14 @@ class MapComponent extends Component {
                         </div>
                     </div>
                 </div>
-                
+                <div className="Map-Container">
+                    <img src={Map1}/>
+                </div>
+                <div className="Map-Next">
+                    <Link to="/quiz01">
+                        Ir
+                    </Link>
+                </div>
 
             </div>
         );

@@ -1,0 +1,21 @@
+.Content-quiz-Dt{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 16%;
+    position: relative;
+    
+}
+.Content-quiz-Dt img{
+    width: 100%;
+}
+#Entendi{
+    position: absolute;
+    margin-top: 40%;
+    width: 13%;
+    height: 5%;
+    background: #F36648;
+    text-align: center;
+    padding: 11px;
+    color: white;
+    border-radius: 10px;
+}

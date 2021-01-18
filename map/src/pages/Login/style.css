@@ -180,7 +180,7 @@ border: 0px solid #000000;
     border-radius: 20px;
     font-size: 18px;
 }
-.Login-enter button{
+#Entrar{
     border: none;
     width: 80%;
     height: 15%;
@@ -188,6 +188,8 @@ border: 0px solid #000000;
     background: #6141A4;
     color: white;
     font-size: 20px;
+    text-align: center;
+    padding: 10px;
     
 }
 .Cadastre-enter{
